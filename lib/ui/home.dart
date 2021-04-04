@@ -71,6 +71,8 @@ class OrderButton extends StatelessWidget {
         margin: EdgeInsets.only(top: 50.0),
         child: ElevatedButton(
           child: Text("Order your Pizza"),
+          style: ButtonStyle(
+              backgroundColor: MaterialStateProperty.all<Color>(Colors.green)),
           onPressed: () => order(context),
         ));
     return Container(
